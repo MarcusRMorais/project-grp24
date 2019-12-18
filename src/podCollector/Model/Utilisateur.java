@@ -33,6 +33,7 @@ public class Utilisateur implements Serializable {
 
     public Utilisateur() throws IOException {
         this.actualPodcast = new JSONArray();
+
         this.user = new JSONObject();
         nom = "";
         prenom = "";
@@ -104,9 +105,10 @@ public class Utilisateur implements Serializable {
         this.user.put("mdp", mdp);
         this.user.put("dateN", this.dateN);
         this.user.put("actualPodcast", this.actualPodcast);
-        this.user.put("pathTelechargement", this.pathTelechargement);
+        this.user.put("pathTelechargement", this.pathTelechargement.toString());
         this.user.put("preferences",this.preferences);
         this.user.put("playlists",this.playlists);
+
 
         //Path filename=Paths.get( "userDoc\\DATA"+login+".json");
         //String filename = new File("").getAbsolutePath();
@@ -114,6 +116,9 @@ public class Utilisateur implements Serializable {
         String filename = (login + ".json");
         try {
             File file = new File(directoryName + "/" + filename);
+            if(file.exists()){
+                file.delete();
+            }
             FileWriter fw = new FileWriter(file.getAbsoluteFile());
             fw.write(user.toString());
             fw.flush();
@@ -125,7 +130,7 @@ public class Utilisateur implements Serializable {
 
 
     //////////////////////////////////parsing for authentification
-    public int getInfo(String login) throws IOException, ParseException {
+    public void getInfo(String login) throws IOException, ParseException {
         String filename = ("userDoc/" + login + ".json");
         File jsonfile = new File(filename);
         boolean exists = jsonfile.exists();
@@ -160,7 +165,6 @@ public class Utilisateur implements Serializable {
             }
         }
 
-        return 0;
     }
     public int authentification(String login, String mdp) throws FileNotFoundException, ParseException {
             String filename = ("userDoc/" + login + ".json");
@@ -217,7 +221,33 @@ public class Utilisateur implements Serializable {
             this.gestplaylist.newPlaylist(nom, pod);
         }
 
-  /* public static void main(String args[]) throws IOException, ParseException {
+    public String getActualPodcastID(){
+        String str="";
+        str=str+this.actualPodcast.get(0);
+
+        return str;
+    }
+    public String getActualPodcastTime(){
+        String str="";
+        str=str+this.actualPodcast.get(1);
+        return str;
+    }
+    public void setActualPodcast(String id,Double time){
+        String i=""+id;
+        Double j=0+time;
+        this.actualPodcast.add(i);
+        this.actualPodcast.add(j);
+
+    }
+    public void saveActualPodcast() throws ParseException, IOException {
+        this.getInfo(this.login);
+        this.setActualPodcast(this.actualPodcast.get(0).toString(),(Double)this.actualPodcast.get(1));
+        this.createUserJson();
+
+
+    }
+
+ /* public static void main(String args[]) throws IOException, ParseException {
         String nom="ANOUAR";
         String prenom="Ilyy";
         String login="ILYANOUAR";
@@ -233,6 +263,8 @@ public class Utilisateur implements Serializable {
         int n=user.verifyLogin(login);
         System.out.println(n);
         System.out.println(auth);
-    }*/
-
+        user.setActualPodcast("actualPod",13.24);
+       user.saveActualPodcast();
+    }
+*/
 }

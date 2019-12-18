@@ -1,8 +1,10 @@
 package podCollector.Model;
 
 public class Podcast {
+    private String id;
     private String nom;
     private String pathImage;
+    private String URl;
     public Podcast(){
 
     }
