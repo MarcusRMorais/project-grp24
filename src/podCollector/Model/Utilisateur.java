@@ -9,6 +9,7 @@ import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
 
+
 import java.io.*;
 import java.nio.file.Path;
 import java.nio.file.Paths;
@@ -78,6 +79,17 @@ public class Utilisateur implements Serializable {
         return this.login;
     }
 
+    public ArrayList<String> getPreferences(){
+        ArrayList<String> listdata= new ArrayList<String>();
+        JSONArray jArray= this.preferences;
+        if(jArray!=null){
+             for(Object o: jArray){
+                 listdata.add(o.toString());
+
+             }
+        }
+        return listdata;
+    }
     public void createUserJson() {
         String directoryName = "userDoc";
         File directory = new File(directoryName);
