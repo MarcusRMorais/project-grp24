@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane prefHeight="450.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <AnchorPane prefHeight="469.0" prefWidth="708.0" style="-fx-background-color: #1f0318;">
+      <children>
+          <Label layoutX="62.0" layoutY="194.0" prefHeight="38.0" prefWidth="190.0" text="Date Naissance :" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </Label>
+          <Label layoutX="64.0" layoutY="161.0" prefHeight="26.0" prefWidth="258.0" text="Prénom :" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </Label>
+          <Label layoutX="61.0" layoutY="125.0" prefHeight="17.0" prefWidth="171.0" text=" Nom :" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </Label>
+          <Label layoutX="60.0" layoutY="244.0" prefHeight="16.0" prefWidth="171.0" text="Mot de passe :" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </Label>
+          <Label layoutX="43.0" layoutY="270.0" prefHeight="17.0" prefWidth="103.0" textFill="WHITE" />
+          <Label layoutX="42.0" layoutY="313.0" />
+          <TextField id="Nom" fx:id="fNom" layoutX="390.0" layoutY="121.0" prefWidth="245.0" />
+          <TextField id="mail" fx:id="fLogin" layoutX="390.0" layoutY="287.0" prefHeight="25.0" prefWidth="245.0" />
+          <TextField id="Prenom" fx:id="fPrenom" layoutX="390.0" layoutY="161.0" prefHeight="26.0" prefWidth="245.0" />
+          <PasswordField id="Mdp" fx:id="fMp" layoutX="390.0" layoutY="244.0" prefHeight="25.0" prefWidth="245.0" />
+          <DatePicker id="Date" fx:id="fDate" layoutX="390.0" layoutY="200.0" prefHeight="26.0" prefWidth="245.0" />
+          <Button fx:id="butValInsc" alignment="CENTER" contentDisplay="CENTER" layoutX="280.0" layoutY="394.0" mnemonicParsing="false" prefHeight="38.0" prefWidth="147.0" text="Valider">
+               <font>
+                  <Font name="Berlin Sans FB" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="60.0" layoutY="287.0" prefHeight="16.0" prefWidth="171.0" text="Login :" textFill="WHITE">
+               <font>
+                  <Font name="Berlin Sans FB" size="21.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="90.0" fitWidth="236.0" layoutX="225.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../inscription.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="121.0" fitWidth="190.0" layoutX="11.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../logo.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="LabelError" alignment="CENTER" layoutX="-2.0" layoutY="329.0" prefHeight="59.0" prefWidth="710.0" textFill="WHITE">
+               <font>
+                  <Font size="29.0" />
+               </font>
+            </Label>
+      </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

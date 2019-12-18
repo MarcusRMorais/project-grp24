@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="800.0" minWidth="1100.0" prefHeight="800.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+        <Pane fx:id="PaneFav" prefHeight="650.0" prefWidth="250.0"/>
+        <Pane fx:id="PanePrincipal" minHeight="650.0" minWidth="850.0" prefHeight="650.0" prefWidth="850.0" />
+        <Pane fx:id="PaneLecture" minHeight="150.0" minWidth="1100.0" prefHeight="150.0" prefWidth="1100.0"/>
+
+   </children>
+</FlowPane>

@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="470.0" prefWidth="690.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutY="-11.0" prefHeight="481.0" prefWidth="690.0" style="-fx-background-color: #1F0318;">
+         <children>
+            <Pane layoutY="-1.0" prefHeight="148.0" prefWidth="608.0">
+               <children>
+                  <Label layoutX="127.0" layoutY="46.0" prefHeight="57.0" prefWidth="149.0" text="Bonjour" textFill="#f2eded">
+                     <font>
+                        <Font name="Champagne &amp; Limousines Bold" size="38.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="lPrenom" layoutX="354.0" layoutY="90.0" prefHeight="38.0" prefWidth="254.0" text="prénom">
+                     <textFill>
+                        <LinearGradient endX="1.0" endY="1.0">
+                           <stops>
+                              <Stop color="#792a2a" />
+                              <Stop color="WHITE" offset="1.0" />
+                           </stops>
+                        </LinearGradient>
+                     </textFill>
+                     <font>
+                        <Font size="35.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <GridPane layoutX="41.0" layoutY="181.0" prefHeight="195.0" prefWidth="608.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="10.0" prefWidth="299.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="301.0" minWidth="10.0" prefWidth="301.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="301.0" minWidth="10.0" prefWidth="301.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <ToggleButton id="Bouton" fx:id="butCat1" mnemonicParsing="false" prefHeight="42.0" prefWidth="108.0" style="-fx-background-radius: 45; -fx-border-radius: 45; -fx-background-color: #A64022; -fx-border-width: 8;" text="Culture" textAlignment="CENTER" textFill="WHITE">
+                     <GridPane.margin>
+                        <Insets left="80.0" />
+                     </GridPane.margin>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </ToggleButton>
+                  <ToggleButton fx:id="butCat2" mnemonicParsing="false" prefHeight="33.0" prefWidth="127.0" style="-fx-border-radius: 45; -fx-background-radius: 45; -fx-background-color: #A64022; -fx-border-width: 8;" text="Science-fiction" textFill="#fffdfd" GridPane.columnIndex="1">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                     <effect>
+                        <InnerShadow radius="7.737500000000001" width="11.95" />
+                     </effect>
+                  </ToggleButton>
+                  <ToggleButton fx:id="butCat4" mnemonicParsing="false" prefHeight="38.0" prefWidth="108.0" style="-fx-background-radius: 45; -fx-border-radius: 45; -fx-background-color: #A64022; -fx-border-width: 8;" text="Entreprise" textFill="#fcf9f9" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="40.0" />
+                     </GridPane.margin>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </ToggleButton>
+                  <ToggleButton fx:id="butCat5" mnemonicParsing="false" prefHeight="36.0" prefWidth="103.0" style="-fx-background-radius: 45; -fx-border-radius: 45; -fx-background-color: #A64022; -fx-border-width: 8;" text="Comédie" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="60.0" />
+                     </GridPane.margin>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </ToggleButton>
+                  <ToggleButton fx:id="butCat7" mnemonicParsing="false" prefHeight="35.0" prefWidth="104.0" style="-fx-background-radius: 45; -fx-border-radius: 45; -fx-background-color: #A64022; -fx-border-width: 8;" text="Technologie" textFill="WHITE" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="100.0" />
+                     </GridPane.margin>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </ToggleButton>
+                  <ToggleButton fx:id="butCat8" mnemonicParsing="false" prefHeight="43.0" prefWidth="86.0" style="-fx-background-radius: 45; -fx-border-radius: 45; -fx-background-color: #A64022; -fx-border-width: 8;" text="Sports" textFill="WHITE" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="40.0" />
+                     </GridPane.margin>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </ToggleButton>
+                  <ToggleButton fx:id="butCat3" mnemonicParsing="false" prefHeight="35.0" prefWidth="114.0" style="-fx-background-radius: 45; -fx-border-radius: 45; -fx-background-color: #A64022; -fx-border-width: 8;" text="Talkshow" textFill="WHITE" GridPane.columnIndex="2">
+                     <GridPane.margin>
+                        <Insets left="20.0" />
+                     </GridPane.margin>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </ToggleButton>
+                  <ToggleButton fx:id="butCat6" mnemonicParsing="false" prefHeight="36.0" prefWidth="85.0" style="-fx-background-radius: 45; -fx-border-radius: 300; -fx-background-color: #A64022; -fx-border-width: 8;" text="Santé" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <GridPane.margin>
+                        <Insets left="70.0" />
+                     </GridPane.margin>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </ToggleButton>
+                  <ToggleButton fx:id="butCat9" mnemonicParsing="false" prefHeight="33.0" prefWidth="106.0" style="-fx-background-radius: 45; -fx-border-radius: 45; -fx-background-color: #A64022; -fx-border-width: 8;" text="Musique" textFill="WHITE" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="40.0" />
+                     </GridPane.margin>
+                     <effect>
+                        <InnerShadow />
+                     </effect>
+                  </ToggleButton>
+               </children>
+            </GridPane>
+            <Pane layoutY="379.0" prefHeight="90.0" prefWidth="690.0">
+               <children>
+                  <Button fx:id="ButValPara" layoutX="461.0" layoutY="33.0" mnemonicParsing="false" prefHeight="43.0" prefWidth="180.0" style="-fx-background-radius: 45; -fx-border-radius: 45;" text="C'est parti !" />
+               </children>
+            </Pane>
+            <Label layoutX="77.0" layoutY="147.0" prefHeight="30.0" prefWidth="537.0" text="Un domaine en particulier vous intéresse ?" textFill="#f8f8f8">
+               <font>
+                  <Font name="Champagne &amp; Limousines Bold Italic" size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

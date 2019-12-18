@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="150" minWidth="1100" prefHeight="150" prefWidth="1100" style="-fx-background-color: linear-gradient(#35102C,#55102C);" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="382.0" minWidth="10.0" prefWidth="373.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="496.0" minWidth="10.0" prefWidth="496.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="10.0" prefWidth="168.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="147.0" text="Titre" textAlignment="CENTER" textFill="WHITE">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <GridPane.margin>
+            <Insets left="30.0" />
+         </GridPane.margin>
+      </Label>
+      <ImageView fitHeight="63.0" fitWidth="108.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1" />
+      <Label alignment="CENTER" prefHeight="17.0" prefWidth="147.0" text="AUTEUR" textFill="WHITE" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets left="30.0" />
+         </GridPane.margin>
+      </Label>
+      <HBox prefHeight="86.0" prefWidth="341.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="butPrev" mnemonicParsing="false" prefHeight="63.0" prefWidth="42.0" style="-fx-background-color: transparent; -fx-text-fill: transparent; -fx-border-fill: transparent;">
+               <graphic>
+                  <ImageView fitHeight="52.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../previous.png" />
+                     </image></ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin></Button>
+            <Button fx:id="butPlay" mnemonicParsing="false" prefHeight="52.0" prefWidth="30.0" style="-fx-background-color: transparent; -fx-text-fill: transparent; -fx-border-fill: transparent;">
+               <graphic>
+                  <ImageView fitHeight="55.0" fitWidth="57.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../play.png" />
+                     </image></ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin></Button>
+            <Button fx:id="butNext" mnemonicParsing="false" prefHeight="61.0" prefWidth="50.0" style="-fx-background-color: tranparent; -fx-text-fill: transparent; -fx-border-fill: transparent;">
+               <graphic>
+                  <ImageView fitHeight="49.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../next.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets left="40.0" />
+               </HBox.margin></Button>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <children>
+            <Label text="Temps lecture" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="5.0" top="25.0" />
+               </HBox.margin>
+            </Label>
+            <Slider>
+               <HBox.margin>
+                  <Insets left="15.0" top="25.0" />
+               </HBox.margin>
+            </Slider>
+            <Label text="Temps totale" textFill="WHITE">
+               <HBox.margin>
+                  <Insets left="15.0" top="25.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" GridPane.columnIndex="2" GridPane.rowIndex="1">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="42.0" prefWidth="15.0" style="-fx-background-color: transparent; -fx-text-fill: transparent; -fx-border-fill: transparent;" text="Button">
+               <graphic>
+                  <ImageView fitHeight="108.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../sound.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets left="10.0" top="10.0" />
+               </HBox.margin>
+            </Button>
+            <Slider value="100.0">
+               <HBox.margin>
+                  <Insets top="25.0" />
+               </HBox.margin>
+            </Slider>
+         </children>
+      </HBox>
+   </children>
+</GridPane>
