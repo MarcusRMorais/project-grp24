@@ -239,15 +239,16 @@ public class Utilisateur implements Serializable {
         this.actualPodcast.add(j);
 
     }
-    public void saveActualPodcast() throws ParseException, IOException {
-        this.getInfo(this.login);
-        this.setActualPodcast(this.actualPodcast.get(0).toString(),(Double)this.actualPodcast.get(1));
+    public void saveActualPodcast(String id, Double time) throws ParseException, IOException {
+       // this.getInfo(this.login);
+        this.setActualPodcast(id,time);
         this.createUserJson();
+
 
 
     }
 
- /* public static void main(String args[]) throws IOException, ParseException {
+ public static void main(String args[]) throws IOException, ParseException {
         String nom="ANOUAR";
         String prenom="Ilyy";
         String login="ILYANOUAR";
@@ -263,8 +264,8 @@ public class Utilisateur implements Serializable {
         int n=user.verifyLogin(login);
         System.out.println(n);
         System.out.println(auth);
-        user.setActualPodcast("actualPod",13.24);
-       user.saveActualPodcast();
+       // user.setActualPodcast("actualPod",13.24);
+       user.saveActualPodcast("actualPod",13.24);
     }
-*/
+
 }
